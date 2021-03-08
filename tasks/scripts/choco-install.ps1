@@ -18,4 +18,4 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/in
 
 [System.Net.ServicePointManager]::SecurityProtocol = $securityProtocolSettingsOriginal
 
-choco install --force -y $Env:PACKAGE
+choco install --force -y $Env:PACKAGE.Split(" ")
